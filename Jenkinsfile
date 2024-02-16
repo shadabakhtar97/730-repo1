@@ -20,7 +20,7 @@ pipeline {
       steps {
         script {
           docker.withRegistry('https://registry.hub.docker.com', registryCredential) {
-            dockerImage.push("${shadabakhtar/ubuntu:latest}")
+            dockerImage.push("${ubuntu:latest}")
           }
         }
       }
