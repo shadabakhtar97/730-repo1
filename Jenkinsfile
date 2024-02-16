@@ -10,7 +10,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build shadabakhtar/ubuntu:latest
+                    docker.build ubuntu:latest
                 }
             }
         }
